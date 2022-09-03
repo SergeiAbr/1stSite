@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <header>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"> <a href="#"> <img src="./img/logo.png" alt=""> </a> </div>
+                <ul class="menu">
+                    <li class="menu__item menu__item1"><a href="#home" class="menu__item-link" data-scroll>Home</a></li>
+                    <li class="menu__item menu__item2"><a href="#yt" class="menu__item-link" data-scroll>Best for Youtube</a></li>
+                    <li class="menu__item menu__item3"><a href="#category" class="menu__item-link" data-scroll>Category</a></li>
+                    <li class="menu__item menu__item4"><a href="#start" class="menu__item-link" data-scroll>Start</a></li>
+                    <li class="menu__item menu__item5"><a href="#custom" class="menu__item-link" data-scroll>Customers</a></li>
+                    <a href="#" class="nav__button">Login</a>
+                </ul>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero" id="home">
+            <h1 class="hero__title">Free download sound effects without copyright</h1>
+            <div class="hero__info">Download free copyright sound effect for your YouTube video and any use.</div>
+            <div class="search__wrapper">
+                <div class="search__box">
+                    <input class="search-txt" type="text" name="" placeholder="Search sound effects">
+                    <button class="search-btn" type="submit">
+                        <img src="./img/search.svg" alt="">
+                    </button>
+                </div>
+                <div class="hero__keywords">Try keyword: happy, funny, natural, horror, jumpscare and more</div>
+            </div>
+            <div class="hero__available">650.654 Available Sounds. Library Updated Weekly. <a href="#"><span>See popular sounds</span></a></div>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main Page -->
+    <main>
+
+        <!-- Partners -->
+        <section class="partners">
+    <div class="container">
+        <h2 class="partner__title">Trusted by top Youtuber and Production House</h2>
+        <div class="partners__wrapper">
+            <div class="partner__item"><img src="./img/p1.jpg" alt=""></div>
+            <div class="partner__item"><img src="./img/p2.jpg" alt=""></div>
+            <div class="partner__item"><img src="./img/p3.png" alt=""></div>
+            <div class="partner__item"><img src="./img/p4.png" alt=""></div>
+            <div class="partner__item"><img src="./img/p5.png" alt=""></div>
+            <div class="partner__item"><img src="./img/p6.png" alt=""></div>
+            <div class="partner__item"><img src="./img/p7.png" alt=""></div>
+        </div>
+    </div>
+</section>
+        <section class="sound" id="yt">
+    <div class="container">
+        <div class="sound__title">Best sound effects for youtube videos</div>
+        <div class="sound__items">
+            <div class="sound__types">
+                <div class="active sound__type sound__type-active" data-id="all">All</div>
+                <div class="sound__type jumpscare" data-id="jumpscare">Jumpscare</div>
+                <div class="sound__type" data-id="mellow">Mellow</div>
+                <div class="sound__type" data-id="happiness">Happiness</div>
+                <div class="sound__type" data-id="ambience">Ambience</div>
+                <div class="sound__type" data-id="zonk">Zonk</div>
+            </div>
+            <div class="sound__item jumpscare">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Stargazing</div>
+                    <div class="sound__time">2:12</div>
+                </div>
+                <div class="sound__descr">Confused excited crowd slight panic and distress</div>
+                <div class="sound__item-type">Shocking, jumpscare</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item jumpscare" id="jumpscare">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Life Is Good</div>
+                    <div class="sound__time">3:15</div>
+                </div>
+                <div class="sound__descr">Confused excited crowd slight panic and distress</div>
+                <div class="sound__item-type">Shocking, jumpscare</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item jumpscare" id="jumpscare">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Off The Grid</div>
+                    <div class="sound__time">1:57</div>
+                </div>
+                <div class="sound__descr">Confused excited crowd slight panic and distress</div>
+                <div class="sound__item-type">Shocking, jumpscare</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item mellow" id="mellow">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Sicko Mode</div>
+                    <div class="sound__time">4:56</div>
+                </div>
+                <div class="sound__descr">Mellow is a state of being positiv</div>
+                <div class="sound__item-type">Mellow, Energetic</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item mellow" id="mellow">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Runaway st</div>
+                    <div class="sound__time">9:07</div>
+                </div>
+                <div class="sound__descr">Mellow is a state of being positive</div>
+                <div class="sound__item-type">Mellow, Energetic</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item happiness" id="happiness">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Big Shoting</div>
+                    <div class="sound__time">3:42</div>
+                </div>
+                <div class="sound__descr">A simple feeling of happiness and simplicity</div>
+                <div class="sound__item-type">Happy, simple</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item sound__item-more1 happiness" id="happiness">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Gorgeouse</div>
+                    <div class="sound__time">2:12</div>
+                </div>
+                <div class="sound__descr">A simple feeling of happiness and simplicity</div>
+                <div class="sound__item-type">Happy, simple</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item sound__item-more2 ambience" id="ambience">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">lost souls</div>
+                    <div class="sound__time">4:30</div>
+                </div>
+                <div class="sound__descr">Atmosphere over traditional musical structure or rhythm.</div>
+                <div class="sound__item-type">Calm, passive</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item sound__item-more3 ambience" id="ambience">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">Overdrive</div>
+                    <div class="sound__time">3:12</div>
+                </div>
+                <div class="sound__descr">Atmosphere over traditional musical structure or rhythm.</div>
+                <div class="sound__item-type">Calm, passive</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sound__item sound__item-more4 zonk" id="zonk">
+                <div class="sound__img">
+                    <img src="./img/sound.svg" alt="">
+                </div>
+                <div class="sound__name-wrapper">
+                    <div class="sound__name">P power</div>
+                    <div class="sound__time">3:16</div>
+                </div>
+                <div class="sound__descr">Just zonk and zonky zonk!</div>
+                <div class="sound__item-type">Zonking</div>
+                <div class="sound__icons">
+                    <div class="sound__icon sound__icon-heart">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.01438 20.2892L9.01445 20.2892L9.022 20.2996C10.2303 21.9682 11.6853 23.4209 13.1963 24.7077L13.2133 24.7222L13.2296 24.7373C13.9196 25.3801 15.0503 26.3493 16.1078 27.1628C16.6373 27.5702 17.1325 27.9262 17.5355 28.1801C17.7302 28.3027 17.8888 28.3922 18.0096 28.4508C18.1442 28.3862 18.3258 28.2741 18.5599 28.098C18.7287 27.9711 18.8963 27.8336 19.0727 27.6887L19.0855 27.6782C19.2475 27.545 19.4262 27.3983 19.5946 27.2742C22.9223 24.7424 26.3382 21.7792 28.0494 18.6251C29.4556 15.6212 29.3553 12.1372 27.3984 10.063C24.7489 7.7008 20.7835 8.18535 18.7893 10.6429L17.9924 11.625L17.2206 10.623C16.6874 9.93088 16.038 9.38743 15.2644 8.98606C12.018 7.71216 8.74532 9.0299 7.40039 11.8675C6.45694 14.8557 7.25825 17.9287 9.01438 20.2892Z"
+                                stroke="#4C526A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-down"><svg width="36" height="37" viewBox="0 0 36 37"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="28.5" width="24" height="2" rx="1" fill="#4C526A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19 8.5C19 7.94772 18.5523 7.5 18 7.5C17.4477 7.5 17 7.94772 17 8.5V21.3258L11.6508 16.7407C11.2315 16.3813 10.6002 16.4299 10.2408 16.8492C9.88134 17.2685 9.9299 17.8998 10.3492 18.2593L17.0889 24.0361C17.6132 24.4855 18.3868 24.4855 18.9111 24.0361L25.6508 18.2593C26.0701 17.8998 26.1187 17.2685 25.7593 16.8492C25.3999 16.4299 24.7686 16.3813 24.3492 16.7407L19 21.3258V8.5Z"
+                                fill="#4C526A" />
+                        </svg>
+                    </div>
+                    <div class="sound__icon sound__icon-more">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="18" cy="18.5" r="2" fill="#4C526A" />
+                            <circle cx="25" cy="18.5" r="2" fill="#4C526A" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a href="./soundsall.html" class="sound__more" target="blank" id="more">See all sound effects</a>
+            <!-- <input class="sound__more" id="button" type="submit" name="button" onclick="more();" value="See all sound effects"/> -->
+        </div>
+
+</section>
+        <section class="category" id="category">
+    <div class="container">
+        <div class="category__title">Browse by category</div>
+        <div class="category__wrapper">
+            <a href="https://goo.su/XyYO" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat1.jpg" alt=""></div>
+                <div class="category__name">Musical</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat2.jpg" alt=""></div>
+                <div class="category__name">Industrial</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat3.jpg" alt=""></div>
+                <div class="category__name">Movie</div>
+                <div class="category__name category__hover">sounds</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat4.jpg" alt=""></div>
+                <div class="category__name">Animal</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat5.jpg" alt=""></div>
+                <div class="category__name">People</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat6.jpg" alt=""></div>
+                <div class="category__name">Vehiclesl</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat7.jpg" alt=""></div>
+                <div class="category__name">Sound</div>
+                <div class="category__name category__hover">designs</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat8.jpg" alt=""></div>
+                <div class="category__name">Emergency</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat9.jpg" alt=""></div>
+                <div class="category__name">Bell</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat10.jpg" alt=""></div>
+                <div class="category__name">Nature</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat11.jpg" alt=""></div>
+                <div class="category__name">Cartoon</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat12.jpg" alt=""></div>
+                <div class="category__name">Horror</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+        </div>
+        
+        <div class="category__wrapper category__wrapper-more">
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat1.jpg" alt=""></div>
+                <div class="category__name">Musical</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat2.jpg" alt=""></div>
+                <div class="category__name">Industrial</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat3.jpg" alt=""></div>
+                <div class="category__name">Movie</div>
+                <div class="category__name category__hover">sounds</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat4.jpg" alt=""></div>
+                <div class="category__name">Animal</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat5.jpg" alt=""></div>
+                <div class="category__name">People</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat6.jpg" alt=""></div>
+                <div class="category__name">Vehiclesl</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat7.jpg" alt=""></div>
+                <div class="category__name">Sound</div>
+                <div class="category__name category__hover">designs</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat8.jpg" alt=""></div>
+                <div class="category__name">Emergency</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat9.jpg" alt=""></div>
+                <div class="category__name">Bell</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat10.jpg" alt=""></div>
+                <div class="category__name">Nature</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat11.jpg" alt=""></div>
+                <div class="category__name">Cartoon</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+            <a href="https://music.youtube.com/moods_and_genres" target="_blank" class="category__item">
+                <div class="category__img"><img src="./img/cat12.jpg" alt=""></div>
+                <div class="category__name">Horror</div>
+                <div class="category__name category__hover">category</div>
+            </a>
+        </div>
+        <div class="category__more">See all category</div>
+    </div>
+</section>
+        <section class="reason">
+    <div class="container">
+        <div class="reason__wrapper">
+            <div class="reason__left">
+                <div class="reason__suptitle">WHY uS?</div>
+                <div class="reason__title">We are provide the best quality sound effects without copyright.</div>
+            </div>
+            <div class="reason__right">
+                <div class="reason__item reason__item1">
+                    <div class="reason__item-img"><img src="./img/reason1.png" alt=""></div>
+                    <div class="reason__item-title">1.203.322 Customer satisfied</div>
+                    <div class="reason__item-info">We've helped more than 1 million customers find best sound effects</div>
+                </div>
+                <div class="reason__item">
+                    <div class="reason__item-img"><img src="./img/reason2.png" alt=""></div>
+                    <div class="reason__item-title">650.654 Sounds</div>
+                    <div class="reason__item-info">More than 600 thousand high quality to download. Still counting</div>
+                </div>
+                <div class="reason__item reason__item3">
+                    <div class="reason__item-img"><img src="./img/reason3.png" alt=""></div>
+                    <div class="reason__item-title">Royalty-free</div>
+                    <div class="reason__item-info">Just download and use the sound for your videos without royalty</div>
+                </div>
+                <div class="reason__item">
+                    <div class="reason__item-img"><img src="./img/reason4.png" alt=""></div>
+                    <div class="reason__item-title">Provide proper sounds</div>
+                    <div class="reason__item-info">We just provide sounds with the best quality  for customers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="start" id="start">
+    <div class="container">
+        <div class="start__title">Download sound effects for your project</div>
+        <div class="start__suptitle">Find the right plan for you</div>
+        <div class="start__boxes">
+            <div class="start__box start__box-basic">
+                <div class="start__wrapper">
+                    <div class="start__box-title">Basic</div>
+                    <div class="start__box-info">Download any royalty-free sound effects</div>
+                    <div class="start__box-price">Free</div>
+                    <a href="" class="start__box-btn start__box-btn-basic">Get started</a>
+                </div>
+            </div>
+            <div class="start__box start__box-premium">
+                <div class="start__wrapper">
+                    <div class="start__box-title">Premium</div>
+                    <div class="start__box-info start__box-info__premium">Download premium sound effects and use them
+                        for any business purpose</div>
+                    <div class="start__box-price start__box-price__premium">Start from $12/month</div>
+                    <a href="" class="start__box-btn start__box-btn-premium">Get started</a>
+                </div>
+            </div>
+        </div>
+        <div class="start__creators">Join premium with 434,849 creators.</div>
+    </div>
+</section>
+        <section  class="customer wow animate__animated  animate__fadeIn" data-wow-duration="1s" data-wow-delay="3s" id="custom">
+    <div class="container">
+        <div class="customer__suptitle">TESTIMONIALS</div>
+        <div class="customer__title">Hear good experiences from our customers</div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">The sounds from WavesCo is great and it really helps our team to
+                            save
+                            time and production costs.</div>
+                        <div class="swiper-slide-person"><img src="./img/person1.jpg" alt=""></div>
+                        <div class="swiper-slide-name">Matthew M.</div>
+                        <div class="swiper-slide-ocup">Video Editor at PewDiePie</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">Perfect way to get best quality sound effects for youtube videos.
+                            Thanks to WavesCo team.</div>
+                        <div class="swiper-slide-person"><img src="./img/person2.jpg" alt=""></div>
+                        <div class="swiper-slide-name">Brad Pitt</div>
+                        <div class="swiper-slide-ocup">Video editor at Dude Perfect</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">WavesCo was a great choice for our team for film production, the
+                            quality is amazingly great.</div>
+                        <div class="swiper-slide-person"><img src="./img/person3.jpg" alt=""></div>
+                        <div class="swiper-slide-name">The Rock</div>
+                        <div class="swiper-slide-ocup">Head of Video editor at Netflix</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">The sounds from WavesCo is great and it really helps our team to
+                            save
+                            time and production costs.</div>
+                        <div class="swiper-slide-person"><img src="./img/person1.jpg" alt=""></div>
+                        <div class="swiper-slide-name">Matthew M.</div>
+                        <div class="swiper-slide-ocup">Video Editor at PewDiePie</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">Perfect way to get best quality sound effects for youtube videos.
+                            Thanks to WavesCo team.</div>
+                        <div class="swiper-slide-person"><img src="./img/person2.jpg" alt=""></div>
+                        <div class="swiper-slide-name">Brad Pitt</div>
+                        <div class="swiper-slide-ocup">Video editor at Dude Perfect</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide-img"><img src="./img/swiper.svg" alt=""></div>
+                        <div class="swiper-slide-text">WavesCo was a great choice for our team for film production, the
+                            quality is amazingly great.</div>
+                        <div class="swiper-slide-person"><img src="./img/person3.jpg" alt=""></div>
+                        <div class="swiper-slide-name">The Rock</div>
+                        <div class="swiper-slide-ocup">Head of Video editor at Netflix</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper__arrows">
+                <button class="swiper__btn prev__btn"><img src="./img/prev.svg" alt=""></button>
+                <button class="swiper__btn next__btn"><img src="./img/next.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__company">
+                    <div class="footer__logo">
+                        <img src="./img/footer.svg" alt="">
+                    </div>
+                    <div class="footer__text">WavesCo is a platform for providing premium sound effects for Youtube
+                        videos, movies and many more.</div>
+                    <div class="footer__copy">WavesCo ©2021, All rights reserved</div>
+                </div>
+                <div class="footer__items">
+                    
+                    <div class="footer__item">
+                        <div class="footer__item-title">Product</div>
+                        <div class="footer__item-links">
+                            <a href="#home" class="footer__item-link">Home</a>
+                            <a href="#yt" class="footer__item-link">Browse sounds</a>
+                            <a href="#category" class="footer__item-link">Categories</a>
+                            <a href="#start" class="footer__item-link">Pricing</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__item">
+                        <div class="footer__item-title">Company</div>
+                        <div class="footer__item-links">
+                            <a href="#" class="footer__item-link">Blog</a>
+                            <a href="#" class="footer__item-link">About us</a>
+                            <a href="#" class="footer__item-link">Help</a>
+                            <a href="#" class="footer__item-link">Career</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__item">
+                        <div class="footer__item-title">Social Media</div>
+                        <div class="footer__item-links">
+                            <a href="#" class="footer__item-link">Twitter</a>
+                            <a href="#" class="footer__item-link">Instagram</a>
+                            <a href="#" class="footer__item-link">YouTube</a>
+                            <a href="#" class="footer__item-link">Facebook</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="./js/scripts.min.js"></script>
+
+
+
+</html>
